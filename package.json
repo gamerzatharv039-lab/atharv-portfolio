@@ -1,0 +1,9 @@
+{
+  "name": "atharv-panchal-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Atharv Panchal video editor portfolio with private admin and persistent Netlify Blobs storage",
+  "dependencies": {
+    "@netlify/blobs": "^10.0.7"
+  }
+}
