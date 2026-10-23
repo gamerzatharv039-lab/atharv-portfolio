@@ -1,57 +1,288 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="Atharv Panchal — Video Editor. YouTube videos, reels, podcasts, talking-head edits, brand ads and cinematic content." />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Atharv Panchal — Video Editor. YouTube videos, reels, podcasts, talking-head edits, brand ads and cinematic content.">
 <title>Atharv Panchal — Video Editor</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
-:root{--paper:#f3f5f8;--ink:#191b22;--muted:#666b76;--line:#e1e3e8;--accent:#3567b7;--accent-soft:#e8f0fb;--white:#fff;--radius:16px}
-*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--paper);color:var(--ink);font-family:'DM Sans',Arial,sans-serif;line-height:1.5}a{color:inherit;text-decoration:none}button,input,textarea,select{font:inherit}.wrap{width:min(1160px,calc(100% - 48px));margin:auto}.mono{font-family:'DM Sans',sans-serif;text-transform:uppercase;letter-spacing:.12em;font-size:10px;font-weight:700}.topbar{height:78px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{font-family:'Space Grotesk',sans-serif;font-size:15px;font-weight:700;letter-spacing:-.04em}.brand span{display:block;font-size:10px;color:var(--muted);font-family:'DM Sans',sans-serif;font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-top:3px}.nav{display:flex;gap:28px;align-items:center;font-size:12px;font-weight:700}.nav a:not(.pill):hover{color:var(--accent)}.pill{display:inline-flex;align-items:center;justify-content:center;border:1px solid #cdd0da;border-radius:8px;padding:12px 17px;font-size:12px;font-weight:700;transition:background .2s,color .2s,border-color .2s}.pill.dark{background:var(--accent);color:white;border-color:var(--accent)}.pill:hover{background:var(--ink);color:white;border-color:var(--ink)}
-.hero{padding:86px 0 48px}.eyebrow{display:flex;gap:10px;align-items:center;color:var(--muted);margin-bottom:24px}.dot{width:7px;height:7px;border-radius:50%;background:var(--accent);display:inline-block;box-shadow:0 0 0 5px var(--accent-soft)}.hero h1{font-family:'Space Grotesk',sans-serif;font-size:clamp(48px,7.2vw,88px);line-height:1.02;letter-spacing:-.065em;margin:0;max-width:1050px;font-weight:500}.hero h1 .outline{color:var(--ink)}.hero-bottom{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:36px;align-items:end;margin-top:30px}.hero-bottom p{max-width:560px;font-size:17px;line-height:1.75;color:#50545f;margin:0}.hero-bottom p strong{color:var(--ink)}.hero-actions{display:flex;gap:10px;justify-content:flex-end;flex-wrap:wrap}.stats{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin:18px auto 70px}.stat{padding:20px 24px;border-right:1px solid var(--line)}.stat:first-child{padding-left:0}.stat:last-child{border-right:0}.stat strong{font-family:'Space Grotesk',sans-serif;font-size:25px;letter-spacing:-.06em;display:block}.stat span{font-size:11px;color:var(--muted);display:block;margin-top:4px}.section{padding:24px 0 78px}.section-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:28px}.section-kicker{color:var(--accent);margin-bottom:12px}.section h2{font-family:'Space Grotesk',sans-serif;font-size:clamp(34px,4.5vw,54px);line-height:1.02;letter-spacing:-.065em;margin:0;font-weight:700}.section-note{font-size:13px;color:var(--muted);max-width:290px;line-height:1.7;margin:0}.work-tools{display:flex;align-items:center;justify-content:flex-end;margin:0 0 18px;gap:12px}.tabs{display:none}.video-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px 20px}.video-card{min-width:0}.thumb{aspect-ratio:16/9;background:#e6e7eb;border-radius:10px;overflow:hidden;position:relative;display:block}.thumb img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .35s}.video-card:hover .thumb img{transform:scale(1.025)}.play{position:absolute;right:12px;bottom:12px;width:38px;height:38px;border-radius:50%;background:var(--accent);color:white;display:grid;place-items:center;font-size:12px;box-shadow:0 4px 16px #10142b25}.video-meta{display:flex;justify-content:space-between;gap:12px;padding-top:12px}.video-meta h3{font-family:'Space Grotesk',sans-serif;font-size:15px;line-height:1.4;margin:0;font-weight:600;letter-spacing:-.025em}.video-meta p{font-size:10px;color:var(--muted);margin:5px 0 0;letter-spacing:.06em}.empty{grid-column:1/-1;border:1px dashed #cdd0da;border-radius:12px;padding:36px;text-align:center;color:var(--muted);font-size:13px;line-height:1.8;background:#fff}.long-section{background:#e8edf4;padding:68px 0 72px}.long-section .section{padding:0}.long-section .section-head{margin-bottom:26px}.long-section .thumb{aspect-ratio:16/9}.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:28px}.service{border:1px solid var(--line);border-radius:12px;padding:22px;min-height:148px;background:#fff;transition:transform .2s,border-color .2s}.service:hover{transform:translateY(-3px);border-color:#b8cbea}.service .num{font-family:'DM Sans',sans-serif;font-size:10px;color:var(--accent);font-weight:700;letter-spacing:.1em}.service h3{font-family:'Space Grotesk',sans-serif;font-size:17px;letter-spacing:-.035em;margin:20px 0 7px}.service p{font-size:12px;line-height:1.7;color:var(--muted);margin:0}.split{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:start}.skill-list{border-top:1px solid var(--line)}.skill-row{display:flex;justify-content:space-between;gap:18px;padding:15px 0;border-bottom:1px solid var(--line);font-size:13px}.skill-row span:last-child{color:var(--muted);text-align:right}.software{display:flex;gap:9px;flex-wrap:wrap;margin-top:20px}.software span{border:1px solid var(--line);padding:10px 12px;border-radius:8px;font-size:12px;font-weight:700;background:#fff}.process{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:28px}.process-item{border-top:2px solid var(--accent);padding-top:14px}.process-item .num{font-family:'DM Sans',sans-serif;color:var(--accent);font-size:10px;font-weight:700;letter-spacing:.1em}.process-item h3{font-family:'Space Grotesk',sans-serif;font-size:15px;margin:13px 0 7px;letter-spacing:-.025em}.process-item p{font-size:12px;line-height:1.7;color:var(--muted);margin:0}.faq-list{border-top:1px solid var(--line);margin-top:25px}.faq{border-bottom:1px solid var(--line)}.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:20px;padding:19px 0;font-size:14px;font-weight:700}.faq summary::-webkit-details-marker{display:none}.faq summary:after{content:'+';font-size:20px;font-weight:400;color:var(--accent)}.faq[open] summary:after{content:'−'}.faq p{max-width:760px;margin:0;padding:0 30px 20px 0;color:var(--muted);font-size:13px;line-height:1.75}.contact{background:#20232d;color:#fff;padding:70px 0 64px}.contact .section-kicker{color:#b8cbea}.contact h2{font-family:'Space Grotesk',sans-serif;font-size:clamp(42px,7vw,82px);line-height:.98;letter-spacing:-.075em;max-width:850px;margin:0}.contact-row{display:flex;align-items:end;justify-content:space-between;gap:25px;margin-top:28px}.contact-row p{max-width:440px;line-height:1.75;color:#c4c6cf;font-size:14px}.contact .pill{border-color:#747986;color:white}.contact .pill.dark{background:var(--accent);color:white;border-color:var(--accent)}footer{padding:20px 0;display:flex;justify-content:space-between;gap:20px;font-size:10px;color:var(--muted)}.admin-open{position:fixed;right:18px;bottom:18px;z-index:20;background:var(--accent);color:white;border:0;border-radius:9px;padding:13px 16px;font-size:11px;font-weight:700;box-shadow:0 8px 24px #203a5b33;cursor:pointer}.admin-panel{position:fixed;inset:0;background:#17192380;z-index:30;display:none;align-items:center;justify-content:center;padding:20px}.admin-panel.show{display:flex}.admin-box{background:#fff;width:min(520px,100%);max-height:90vh;overflow:auto;border-radius:14px;padding:25px;box-shadow:0 20px 80px #0003}.admin-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}.admin-head h2{font-family:'Space Grotesk',sans-serif;margin:0;font-size:23px;letter-spacing:-.05em}.close{border:0;background:#eff0f5;border-radius:8px;width:34px;height:34px;cursor:pointer}.admin-box>p{font-size:12px;color:var(--muted);line-height:1.7}.field{display:block;margin-top:15px;font-size:11px;font-weight:700}.field input,.field select{display:block;width:100%;margin-top:7px;border:1px solid #d7d9e0;background:white;border-radius:8px;padding:12px;font-size:13px;outline:none}.field input:focus{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}.check{display:flex;gap:9px;align-items:center;margin:16px 0;font-size:12px}.admin-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}.admin-actions button{cursor:pointer}.admin-list{margin-top:24px;border-top:1px solid var(--line);padding-top:15px}.admin-list h3{font-size:12px}.admin-item{display:flex;justify-content:space-between;gap:10px;align-items:center;border-top:1px solid var(--line);padding:10px 0;font-size:11px}.admin-item span{overflow-wrap:anywhere}.remove{border:0;background:#fce8e7;color:#a2322c;border-radius:6px;padding:7px 9px;cursor:pointer;font-size:10px;font-weight:700}.notice{font-size:10px;color:var(--muted);margin-top:14px;line-height:1.7}.hidden{display:none!important}
-@media(max-width:760px){.wrap{width:calc(100% - 32px)}.topbar{height:68px}.nav{gap:12px}.nav a:not(.pill){display:none}.hero{padding:65px 0 38px}.hero h1{font-size:clamp(44px,9vw,68px)}.hero-bottom{grid-template-columns:1fr;gap:22px;margin-top:24px}.hero-bottom p{font-size:15px}.hero-actions{justify-content:flex-start}.stats{margin-bottom:52px}.stat{padding:16px 10px}.stat strong{font-size:19px}.stat span{font-size:9px}.section{padding-bottom:58px}.section-head{align-items:start;flex-direction:column;gap:12px}.section-note{max-width:none}.video-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 12px}.video-meta h3{font-size:12px}.long-section{padding:52px 0}.services-grid{grid-template-columns:repeat(2,1fr);gap:10px}.service{padding:16px;min-height:140px}.service h3{font-size:15px}.split{grid-template-columns:1fr;gap:30px}.process{grid-template-columns:repeat(2,1fr);gap:24px 14px}.contact-row{align-items:start;flex-direction:column}.contact-row .pill{width:100%}footer{flex-direction:column;gap:8px}.admin-open{right:12px;bottom:12px}.admin-actions .pill{font-size:11px;padding:10px 12px}}
-@media(max-width:420px){.video-grid{grid-template-columns:1fr}.services-grid{grid-template-columns:1fr}.stat strong{font-size:17px}.stat{padding:14px 8px}.hero h1{font-size:44px}}
+:root{--paper:#f3f5f8;--ink:#191b22;--muted:#666b76;--line:#e1e3e8;--accent:#3567b7;--accent-soft:#e8f0fb;--white:#fff}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'DM Sans',Arial,sans-serif;line-height:1.5}
+a{color:inherit;text-decoration:none}
+button,input,select{font:inherit}
+.wrap{width:min(1160px,calc(100% - 48px));margin:auto}
+.mono{font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+.topbar{height:78px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
+.brand{font-family:'Space Grotesk',sans-serif;font-size:15px;font-weight:700;letter-spacing:-.04em}
+.brand span{display:block;font-size:10px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;margin-top:3px}
+.nav{display:flex;gap:28px;align-items:center;font-size:12px;font-weight:700}
+.pill{display:inline-flex;align-items:center;justify-content:center;border:1px solid #cdd0da;border-radius:8px;padding:12px 17px;font-size:12px;font-weight:700;cursor:pointer;background:transparent}
+.pill.dark{background:var(--accent);color:white;border-color:var(--accent)}
+.pill:hover{background:var(--ink);color:white;border-color:var(--ink)}
+.hero{padding:86px 0 48px}
+.eyebrow{display:flex;gap:10px;align-items:center;color:var(--muted);margin-bottom:24px}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 5px var(--accent-soft)}
+.hero h1{font-family:'Space Grotesk',sans-serif;font-size:clamp(48px,7.2vw,88px);line-height:1.02;letter-spacing:-.065em;margin:0;font-weight:500}
+.hero-bottom{display:grid;grid-template-columns:1fr auto;gap:36px;align-items:end;margin-top:30px}
+.hero-bottom p{max-width:560px;font-size:17px;line-height:1.75;color:#50545f;margin:0}
+.hero-actions{display:flex;gap:10px;flex-wrap:wrap}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin:18px auto 70px}
+.stat{padding:20px 24px;border-right:1px solid var(--line)}
+.stat:first-child{padding-left:0}.stat:last-child{border:0}
+.stat strong{font-family:'Space Grotesk',sans-serif;font-size:25px;display:block}
+.stat span{font-size:11px;color:var(--muted)}
+.section{padding:24px 0 78px}
+.section-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:28px}
+.section-kicker{color:var(--accent);margin-bottom:12px}
+.section h2{font-family:'Space Grotesk',sans-serif;font-size:clamp(34px,4.5vw,54px);line-height:1.02;letter-spacing:-.065em;margin:0}
+.section-note{font-size:13px;color:var(--muted);max-width:290px;line-height:1.7;margin:0}
+.work-tools{display:flex;justify-content:flex-end;margin-bottom:18px}
+.video-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px 20px}
+.video-card{min-width:0}
+.thumb{aspect-ratio:16/9;background:#e6e7eb;border-radius:10px;overflow:hidden;position:relative;display:block}
+.thumb img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .35s}
+.video-card:hover .thumb img{transform:scale(1.025)}
+.play{position:absolute;right:12px;bottom:12px;width:38px;height:38px;border-radius:50%;background:var(--accent);color:white;display:grid;place-items:center}
+.video-meta{display:flex;justify-content:space-between;gap:12px;padding-top:12px}
+.video-meta h3{font-family:'Space Grotesk',sans-serif;font-size:15px;line-height:1.4;margin:0;font-weight:600}
+.video-meta p{font-size:10px;color:var(--muted);margin:5px 0 0;letter-spacing:.06em}
+.empty{grid-column:1/-1;border:1px dashed #cdd0da;border-radius:12px;padding:36px;text-align:center;color:var(--muted);font-size:13px;line-height:1.8;background:white}
+.long-section{background:#e8edf4;padding:68px 0 72px}
+.long-section .section{padding:0}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:28px}
+.service{border:1px solid var(--line);border-radius:12px;padding:22px;min-height:148px;background:white}
+.service .num{font-size:10px;color:var(--accent);font-weight:700}
+.service h3{font-family:'Space Grotesk',sans-serif;font-size:17px;margin:20px 0 7px}
+.service p,.process-item p{font-size:12px;line-height:1.7;color:var(--muted);margin:0}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:70px}
+.skill-list{border-top:1px solid var(--line)}
+.skill-row{display:flex;justify-content:space-between;gap:18px;padding:15px 0;border-bottom:1px solid var(--line);font-size:13px}
+.skill-row span:last-child{color:var(--muted)}
+.software{display:flex;gap:9px;flex-wrap:wrap;margin-top:20px}
+.software span{border:1px solid var(--line);padding:10px 12px;border-radius:8px;font-size:12px;font-weight:700;background:white}
+.process{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:28px}
+.process-item{border-top:2px solid var(--accent);padding-top:14px}
+.process-item .num{font-size:10px;color:var(--accent);font-weight:700}
+.process-item h3{font-family:'Space Grotesk',sans-serif;font-size:15px;margin:13px 0 7px}
+.faq-list{border-top:1px solid var(--line);margin-top:25px}
+.faq{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;padding:19px 0;font-size:14px;font-weight:700}
+.faq summary:after{content:'+';font-size:20px;color:var(--accent)}
+.faq[open] summary:after{content:'−'}
+.faq p{max-width:760px;margin:0;padding:0 30px 20px 0;color:var(--muted);font-size:13px;line-height:1.75}
+.contact{background:#20232d;color:white;padding:70px 0 64px}
+.contact .section-kicker{color:#b8cbea}
+.contact h2{font-family:'Space Grotesk',sans-serif;font-size:clamp(42px,7vw,82px);line-height:.98;letter-spacing:-.075em;margin:0}
+.contact-row{display:flex;align-items:end;justify-content:space-between;gap:25px;margin-top:28px}
+.contact-row p{max-width:440px;line-height:1.75;color:#c4c6cf;font-size:14px}
+.contact .pill{border-color:#747986;color:white}
+footer{padding:20px 0;display:flex;justify-content:space-between;gap:20px;font-size:10px;color:var(--muted)}
+.admin-open{position:fixed;right:18px;bottom:18px;z-index:20;background:var(--accent);color:white;border:0;border-radius:9px;padding:13px 16px;font-size:11px;font-weight:700;cursor:pointer}
+.admin-panel{position:fixed;inset:0;background:#17192380;z-index:30;display:none;align-items:center;justify-content:center;padding:20px}
+.admin-panel.show{display:flex}
+.admin-box{background:white;width:min(520px,100%);max-height:90vh;overflow:auto;border-radius:14px;padding:25px;box-shadow:0 20px 80px #0003}
+.admin-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.admin-head h2{font-family:'Space Grotesk',sans-serif;margin:0;font-size:23px}
+.close{border:0;background:#eff0f5;border-radius:8px;width:34px;height:34px;cursor:pointer}
+.field{display:block;margin-top:15px;font-size:11px;font-weight:700}
+.field input,.field select{display:block;width:100%;margin-top:7px;border:1px solid #d7d9e0;background:white;border-radius:8px;padding:12px;font-size:13px}
+.check{display:flex;gap:9px;align-items:center;margin:16px 0;font-size:12px}
+.admin-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}
+.admin-list{margin-top:24px;border-top:1px solid var(--line);padding-top:15px}
+.admin-list h3{font-size:12px}
+.admin-item{display:flex;justify-content:space-between;gap:10px;align-items:center;border-top:1px solid var(--line);padding:10px 0;font-size:11px}
+.admin-item span{overflow-wrap:anywhere}
+.remove{border:0;background:#fce8e7;color:#a2322c;border-radius:6px;padding:7px 9px;cursor:pointer;font-size:10px;font-weight:700}
+.notice{font-size:10px;color:var(--muted);margin-top:14px;line-height:1.7}
+.hidden{display:none!important}
+@media(max-width:760px){
+.wrap{width:calc(100% - 32px)}.topbar{height:68px}.nav{gap:12px}.nav a:not(.pill){display:none}
+.hero{padding:65px 0 38px}.hero h1{font-size:clamp(44px,9vw,68px)}
+.hero-bottom{grid-template-columns:1fr;gap:22px}.hero-bottom p{font-size:15px}
+.stats{margin-bottom:52px}.stat{padding:16px 10px}.stat strong{font-size:19px}.stat span{font-size:9px}
+.section{padding-bottom:58px}.section-head{align-items:start;flex-direction:column;gap:12px}.section-note{max-width:none}
+.video-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 12px}.video-meta h3{font-size:12px}
+.long-section{padding:52px 0}.services-grid{grid-template-columns:repeat(2,1fr);gap:10px}
+.service{padding:16px;min-height:140px}.service h3{font-size:15px}
+.split{grid-template-columns:1fr;gap:30px}.process{grid-template-columns:repeat(2,1fr);gap:24px 14px}
+.contact-row{align-items:start;flex-direction:column}.contact-row .pill{width:100%}
+footer{flex-direction:column;gap:8px}.admin-open{right:12px;bottom:12px}
+}
+@media(max-width:420px){.video-grid,.services-grid{grid-template-columns:1fr}.stat strong{font-size:17px}.stat{padding:14px 8px}.hero h1{font-size:44px}}
 </style>
 </head>
 <body>
-<header class="wrap topbar"><a class="brand" href="#top">ATHARV PANCHAL<span>Video Editor / Motion Designer</span></a><nav class="nav"><a href="#work">Work</a><a href="#services">Services</a><a href="#about">About</a><a class="pill dark" href="#contact">Let’s talk ↗</a></nav></header>
+<header class="wrap topbar">
+<a class="brand" href="#top">ATHARV PANCHAL<span>Video Editor / Motion Designer</span></a>
+<nav class="nav"><a href="#work">Work</a><a href="#services">Services</a><a href="#about">About</a><a class="pill dark" href="#contact">Let’s talk ↗</a></nav>
+</header>
 <main id="top">
-<section class="wrap hero"><div class="eyebrow mono"><span class="dot"></span> Available for select projects · India / Worldwide</div><h1>Atharv <span class="outline">Panchal</span></h1><div class="hero-bottom"><p><strong>Video Editor</strong><br>I turn raw footage into engaging videos for creators and brands, with 4 years of editing experience.</p><div class="hero-actions"><a class="pill dark" href="#work">Explore my work ↘</a><a class="pill" href="#contact">Start a project ↗</a></div></div></section>
-<section class="wrap stats"><div class="stat"><strong>04 years</strong><span>Editing experience</span></div><div class="stat"><strong>2–3 days</strong><span>Typical turnaround*</span></div><div class="stat"><strong>End-to-end</strong><span>From raw footage to final cut</span></div></section>
-<section class="wrap section" id="work"><div class="section-head"><div><div class="section-kicker mono">01 / Selected work</div><h2>Good work speaks.</h2></div><p class="section-note">A selection of edits across formats. Open a project to watch it on YouTube.</p></div><div class="work-tools"><span class="mono" id="work-count">00 projects</span></div><div class="video-grid" id="all-grid"><div class="empty">Your best work will live here.<br>Use the <strong>Manage Work</strong> button to add a YouTube link. Its thumbnail is fetched automatically when available.</div></div></section>
-<section class="long-section" id="long-form"><div class="wrap section"><div class="section-head"><div><div class="section-kicker mono">02 / Long-form</div><h2>Built for the full story.</h2></div><p class="section-note">YouTube videos, documentaries, podcasts and longer edits — with pacing that keeps people watching.</p></div><div class="video-grid" id="long-grid"><div class="empty">Long-form projects you add will appear here automatically.</div></div></div></section>
-<section class="wrap section" id="services"><div class="section-head"><div><div class="section-kicker mono">03 / What I do</div><h2>From the first frame<br>to the final export.</h2></div><p class="section-note">Editing built around the platform, audience and purpose of each project.</p></div><div class="services-grid"><article class="service"><span class="num">01 — CREATOR</span><h3>YouTube videos</h3><p>Story structure, pacing, sound design, clean cuts and engaging visuals.</p></article><article class="service"><span class="num">02 — SHORT-FORM</span><h3>Reels & Shorts</h3><p>Fast hooks, tight edits, captions and platform-ready vertical delivery.</p></article><article class="service"><span class="num">03 — CONVERSATION</span><h3>Podcast & Talking Head</h3><p>Clear dialogue, thoughtful pacing, punch-ins, captions and supporting visuals.</p></article><article class="service"><span class="num">04 — MOTION</span><h3>Motion Graphics</h3><p>Text animation, graphic elements and motion that supports the message.</p></article><article class="service"><span class="num">05 — BRAND</span><h3>Brand Ads & UGC Reels</h3><p>Product-focused edits and creator-style ads shaped around the brief.</p></article><article class="service"><span class="num">06 — VISUAL STORY</span><h3>Cinematic edits</h3><p>Music-led storytelling, atmosphere, colour treatment and intentional transitions.</p></article></div></section>
-<section class="wrap section" id="about"><div class="split"><div><div class="section-kicker mono">04 / Skills & toolkit</div><h2>Creative choices.<br>Technical craft.</h2><p style="font-size:14px;line-height:1.8;color:var(--muted);max-width:420px">I focus on making each edit feel purposeful — not just adding effects, but using pacing, sound and visuals to make the story work.</p><div class="software"><span>Adobe Premiere Pro</span><span>After Effects</span><span>CapCut</span></div></div><div><div class="skill-list"><div class="skill-row"><span>Storytelling & pacing</span><span>Editing</span></div><div class="skill-row"><span>Retention-focused editing</span><span>YouTube</span></div><div class="skill-row"><span>Motion graphics</span><span>2D / Text</span></div><div class="skill-row"><span>Sound design & music sync</span><span>Polish</span></div><div class="skill-row"><span>Short-form vertical edits</span><span>9:16</span></div><div class="skill-row"><span>Brand & creator content</span><span>Ads / UGC</span></div></div><p style="font-size:10px;color:var(--muted);line-height:1.6">After Effects: basic working knowledge. Software and skills listed reflect the current toolkit.</p></div></div></section>
-<section class="wrap section" id="process"><div class="section-kicker mono">05 / How I work</div><h2>A clear process.<br>No guesswork.</h2><div class="process"><div class="process-item"><span class="num">STEP 01</span><h3>Brief & assets</h3><p>You share the goal, reference, footage, format and deadline.</p></div><div class="process-item"><span class="num">STEP 02</span><h3>Editing</h3><p>I shape the story, pacing, visuals, sound and motion to fit the brief.</p></div><div class="process-item"><span class="num">STEP 03</span><h3>Review & revisions</h3><p>You review the draft and send one clear set of feedback.</p></div><div class="process-item"><span class="num">STEP 04</span><h3>Final delivery</h3><p>Approved export in the agreed format, ready for publishing.</p></div></div></section>
-<section class="wrap section" id="faq"><div class="section-kicker mono">06 / Frequently asked</div><h2>Before we get started.</h2><div class="faq-list"><details class="faq"><summary>How long does a project take?</summary><p>A typical project takes around 2–3 days. Final timing depends on video length, complexity, footage quality and the agreed scope. I’ll confirm a timeline before starting.</p></details><details class="faq"><summary>How much do you charge?</summary><p>Pricing depends on the project, length, editing style, deliverables and deadline. Share your brief and reference, and I’ll provide a quote before work begins.</p></details><details class="faq"><summary>What do you need from me?</summary><p>Usually the raw footage, a short brief, reference links, target platform, aspect ratio, any brand assets and the deadline.</p></details><details class="faq"><summary>Are revisions included?</summary><p>Revision rounds should be agreed in the quote before the project starts. Major changes to the original brief may affect the price and delivery date.</p></details><details class="faq"><summary>Which formats can you deliver?</summary><p>We’ll agree on the required platform and aspect ratio in advance, such as 16:9 for YouTube or 9:16 for Reels and Shorts.</p></details><details class="faq"><summary>Can you edit brand ads and UGC?</summary><p>Yes — I offer brand ads and UGC-style Reels. Share the product, target audience, key message and any required deliverables.</p></details></div></section>
-<section class="contact" id="contact"><div class="wrap"><div class="section-kicker mono">07 / Have a project in mind?</div><h2>Let’s make something<br>worth watching.</h2><div class="contact-row"><p>Tell me what you’re making, what you need edited and when you need it. I’ll get back to you to discuss the scope, timeline and quote.</p><div style="display:flex;gap:10px;flex-wrap:wrap"><a class="pill dark" href="https://wa.me/918446016985" target="_blank" rel="noreferrer">WhatsApp me ↗</a><a class="pill" id="email-link" href="mailto:YOUR_EMAIL_HERE">Email me ↗</a></div></div></div></section>
-</main><footer class="wrap"><span>© <span id="year"></span> Atharv Panchal. All rights reserved.</span><span>Video Editor · Motion Designer</span></footer>
+<section class="wrap hero">
+<div class="eyebrow mono"><span class="dot"></span> Available for select projects · India / Worldwide</div>
+<h1>Atharv <span>Panchal</span></h1>
+<div class="hero-bottom"><p><strong>Video Editor</strong><br>I turn raw footage into engaging videos for creators and brands, with 4 years of editing experience.</p><div class="hero-actions"><a class="pill dark" href="#work">Explore my work ↘</a><a class="pill" href="#contact">Start a project ↗</a></div></div>
+</section>
+<section class="wrap stats">
+<div class="stat"><strong>04 years</strong><span>Editing experience</span></div>
+<div class="stat"><strong>2–3 days</strong><span>Typical turnaround*</span></div>
+<div class="stat"><strong>End-to-end</strong><span>From raw footage to final cut</span></div>
+</section>
+<section class="wrap section" id="work">
+<div class="section-head"><div><div class="section-kicker mono">01 / Selected work</div><h2>Good work speaks.</h2></div><p class="section-note">A selection of edits across formats. Open a project to watch it on YouTube.</p></div>
+<div class="work-tools"><span class="mono" id="work-count">00 projects</span></div>
+<div class="video-grid" id="all-grid"><div class="empty">Your best work will live here.<br>Use <strong>Manage Work</strong> to add a YouTube link.</div></div>
+</section>
+<section class="long-section" id="long-form"><div class="wrap section">
+<div class="section-head"><div><div class="section-kicker mono">02 / Long-form</div><h2>Built for the full story.</h2></div><p class="section-note">YouTube videos, documentaries, podcasts and longer edits — with pacing that keeps people watching.</p></div>
+<div class="video-grid" id="long-grid"><div class="empty">Long-form projects you add will appear here automatically.</div></div>
+</div></section>
+<section class="wrap section" id="services">
+<div class="section-head"><div><div class="section-kicker mono">03 / What I do</div><h2>From the first frame<br>to the final export.</h2></div><p class="section-note">Editing built around the platform, audience and purpose of each project.</p></div>
+<div class="services-grid">
+<article class="service"><span class="num">01 — CREATOR</span><h3>YouTube videos</h3><p>Story structure, pacing, sound design, clean cuts and engaging visuals.</p></article>
+<article class="service"><span class="num">02 — SHORT-FORM</span><h3>Reels & Shorts</h3><p>Fast hooks, tight edits, captions and platform-ready vertical delivery.</p></article>
+<article class="service"><span class="num">03 — CONVERSATION</span><h3>Podcast & Talking Head</h3><p>Clear dialogue, thoughtful pacing, punch-ins, captions and supporting visuals.</p></article>
+<article class="service"><span class="num">04 — MOTION</span><h3>Motion Graphics</h3><p>Text animation, graphic elements and motion that supports the message.</p></article>
+<article class="service"><span class="num">05 — BRAND</span><h3>Brand Ads & UGC Reels</h3><p>Product-focused edits and creator-style ads shaped around the brief.</p></article>
+<article class="service"><span class="num">06 — VISUAL STORY</span><h3>Cinematic edits</h3><p>Music-led storytelling, atmosphere, colour treatment and intentional transitions.</p></article>
+</div></section>
+<section class="wrap section" id="about"><div class="split">
+<div><div class="section-kicker mono">04 / Skills & toolkit</div><h2>Creative choices.<br>Technical craft.</h2><p style="font-size:14px;line-height:1.8;color:var(--muted);max-width:420px">I focus on making each edit feel purposeful — not just adding effects, but using pacing, sound and visuals to make the story work.</p><div class="software"><span>Adobe Premiere Pro</span><span>After Effects</span><span>CapCut</span></div></div>
+<div><div class="skill-list"><div class="skill-row"><span>Storytelling & pacing</span><span>Editing</span></div><div class="skill-row"><span>Retention-focused editing</span><span>YouTube</span></div><div class="skill-row"><span>Motion graphics</span><span>2D / Text</span></div><div class="skill-row"><span>Sound design & music sync</span><span>Polish</span></div><div class="skill-row"><span>Short-form vertical edits</span><span>9:16</span></div><div class="skill-row"><span>Brand & creator content</span><span>Ads / UGC</span></div></div><p style="font-size:10px;color:var(--muted);line-height:1.6">After Effects: basic working knowledge. Software and skills listed reflect the current toolkit.</p></div>
+</div></section>
+<section class="wrap section" id="process"><div class="section-kicker mono">05 / How I work</div><h2>A clear process.<br>No guesswork.</h2><div class="process">
+<div class="process-item"><span class="num">STEP 01</span><h3>Brief & assets</h3><p>You share the goal, reference, footage, format and deadline.</p></div>
+<div class="process-item"><span class="num">STEP 02</span><h3>Editing</h3><p>I shape the story, pacing, visuals, sound and motion to fit the brief.</p></div>
+<div class="process-item"><span class="num">STEP 03</span><h3>Review & revisions</h3><p>You review the draft and send one clear set of feedback.</p></div>
+<div class="process-item"><span class="num">STEP 04</span><h3>Final delivery</h3><p>Approved export in the agreed format, ready for publishing.</p></div>
+</div></section>
+<section class="wrap section" id="faq"><div class="section-kicker mono">06 / Frequently asked</div><h2>Before we get started.</h2><div class="faq-list">
+<details class="faq"><summary>How long does a project take?</summary><p>A typical project takes around 2–3 days. Final timing depends on video length, complexity, footage quality and the agreed scope. I’ll confirm a timeline before starting.</p></details>
+<details class="faq"><summary>How much do you charge?</summary><p>Pricing depends on the project, length, editing style, deliverables and deadline. Share your brief and reference, and I’ll provide a quote before work begins.</p></details>
+<details class="faq"><summary>What do you need from me?</summary><p>Usually the raw footage, a short brief, reference links, target platform, aspect ratio, any brand assets and the deadline.</p></details>
+<details class="faq"><summary>Are revisions included?</summary><p>Revision rounds should be agreed in the quote before the project starts. Major changes to the original brief may affect the price and delivery date.</p></details>
+<details class="faq"><summary>Which formats can you deliver?</summary><p>We’ll agree on the required platform and aspect ratio in advance, such as 16:9 for YouTube or 9:16 for Reels and Shorts.</p></details>
+<details class="faq"><summary>Can you edit brand ads and UGC?</summary><p>Yes — I offer brand ads and UGC-style Reels. Share the product, target audience, key message and any required deliverables.</p></details>
+</div></section>
+<section class="contact" id="contact"><div class="wrap"><div class="section-kicker mono">07 / Have a project in mind?</div><h2>Let’s make something<br>worth watching.</h2><div class="contact-row"><p>Tell me what you’re making, what you need edited and when you need it. I’ll get back to you to discuss the scope, timeline and quote.</p><div style="display:flex;gap:10px;flex-wrap:wrap"><a class="pill dark" href="https://wa.me/918446016985" target="_blank" rel="noreferrer">WhatsApp me ↗</a><a class="pill" href="mailto:YOUR_EMAIL_HERE">Email me ↗</a></div></div></div></section>
+</main>
+<footer class="wrap"><span>© <span id="year"></span> Atharv Panchal. All rights reserved.</span><span>Video Editor · Motion Designer</span></footer>
+
 <button class="admin-open" id="admin-open">＋ Manage Work</button>
-<div class="admin-panel" id="admin-panel" role="dialog" aria-modal="true" aria-label="Manage portfolio videos"><div class="admin-box"><div class="admin-head"><h2>Manage your work</h2><button class="close" id="admin-close" aria-label="Close">×</button></div>
-<div id="admin-login"><p>Private admin access. Only Atharv can add or remove portfolio videos.</p><form id="login-form"><label class="field">Admin password<input id="admin-password" type="password" autocomplete="current-password" placeholder="Enter your admin password" required></label><div class="admin-actions"><button class="pill dark" type="submit">Unlock admin</button></div></form><p class="notice">Your password is checked securely on the server. Do not share it with clients.</p></div>
-<div id="admin-tools" class="hidden"><p>Add a YouTube video URL and title. The thumbnail is fetched automatically from YouTube when available. Long-form videos also appear in the dedicated section.</p><form id="video-form"><label class="field">Video title<input id="video-title" placeholder="e.g. Brand Film — Summer Campaign" required maxlength="100"></label><label class="field">YouTube URL<input id="video-url" type="url" placeholder="https://www.youtube.com/watch?v=..." required></label><label class="check"><input id="video-long" type="checkbox"> Add to Long-form section</label><div class="admin-actions"><button class="pill dark" type="submit">Add video +</button><button class="pill" type="button" id="export-data">Export video list</button><button class="pill" type="button" id="import-data">Import video list</button><input class="hidden" id="import-file" type="file" accept="application/json"></div></form><div class="admin-list"><h3>Added videos</h3><div id="admin-video-list"></div></div><div class="admin-actions"><button class="pill" type="button" id="admin-logout">Lock admin</button></div><p class="notice">Videos are stored in the site's shared Netlify Blobs store, so they remain available after closing the browser and are visible to public visitors.</p></div></div></div>
+<div class="admin-panel" id="admin-panel" role="dialog" aria-modal="true" aria-label="Manage portfolio videos">
+<div class="admin-box"><div class="admin-head"><h2>Manage your work</h2><button class="close" id="admin-close" aria-label="Close">×</button></div>
+<div id="admin-tools"><p>Add a YouTube video URL and title. Long-form videos also appear in the dedicated section.</p>
+<form id="video-form">
+<label class="field">Video title<input id="video-title" placeholder="e.g. Brand Film — Summer Campaign" required maxlength="100"></label>
+<label class="field">YouTube URL<input id="video-url" type="url" placeholder="https://www.youtube.com/watch?v=..." required></label>
+<label class="check"><input id="video-long" type="checkbox"> Add to Long-form section</label>
+<div class="admin-actions"><button class="pill dark" type="submit">Add video +</button><button class="pill" type="button" id="export-data">Export video list</button><button class="pill" type="button" id="import-data">Import video list</button><input class="hidden" id="import-file" type="file" accept="application/json"></div>
+</form>
+<div class="admin-list"><h3>Added videos</h3><div id="admin-video-list"></div></div>
+<div class="admin-actions"><button class="pill" type="button" id="admin-logout">Close</button></div>
+<p class="notice">Videos are stored in the site's shared Netlify Blobs store and are visible to public visitors.</p>
+</div></div></div>
+
 <script>
-const API='/api/videos';let videos=[];let adminPassword=sessionStorage.getItem('atharvAdminPassword')||'';
-const $=s=>document.querySelector(s);const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-function getId(url){try{const u=new URL(url);if(u.hostname.includes('youtu.be'))return u.pathname.split('/').filter(Boolean)[0]||'';if(u.searchParams.get('v'))return u.searchParams.get('v');const m=u.pathname.match(/\/(?:embed|shorts|live)\/([^/?]+)/);return m?m[1]:''}catch(e){return ''}}
-function validYouTube(url){return !!getId(url)}function thumbnail(id){return `https://i.ytimg.com/vi/${encodeURIComponent(id)}/hqdefault.jpg`}
-function card(v){const id=getId(v.url);return `<article class="video-card"><a class="thumb" href="${esc(v.url)}" target="_blank" rel="noreferrer"><img loading="lazy" src="${thumbnail(id)}" alt="Thumbnail for ${esc(v.title)}" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/${encodeURIComponent(id)}/mqdefault.jpg'"><span class="play">▶</span></a><div class="video-meta"><div><h3>${esc(v.title)}</h3><p>${v.long?'LONG-FORM':'SELECTED WORK'} · YOUTUBE</p></div><span class="mono">↗</span></div></article>`}
-function render(){const all=$('#all-grid'),long=$('#long-grid');all.innerHTML=videos.length?videos.map(card).join(''):'<div class="empty">Your best work will live here. Use <strong>Manage Work</strong> to add a YouTube link.</div>';const longs=videos.filter(v=>v.long);long.innerHTML=longs.length?longs.map(card).join(''):'<div class="empty">Long-form projects you add will appear here automatically.</div>';$('#work-count').textContent=String(videos.length).padStart(2,'0')+' projects';renderAdmin()}
-async function api(action,data={},password=adminPassword){const res=await fetch(API,{method:action==='get'?'GET':'POST',headers:action==='get'?{}:{'Content-Type':'application/json','Authorization':'Bearer '+password},body:action==='get'?undefined:JSON.stringify({action,...data})});let body={};try{body=await res.json()}catch(e){}if(!res.ok)throw new Error(body.error||'Request failed');return body}
-async function loadVideos(){try{const d=await api('get');videos=Array.isArray(d.videos)?d.videos:[];render()}catch(e){console.error(e);$('#all-grid').innerHTML='<div class="empty">Could not load portfolio videos right now. Please refresh in a moment.</div>';$('#long-grid').innerHTML='<div class="empty">Long-form projects will appear here.</div>';$('#work-count').textContent='00 projects'}}
-function renderAdmin(){$('#admin-video-list').innerHTML=videos.length?videos.map(v=>`<div class="admin-item"><span>${esc(v.title)}${v.long?' · Long-form':''}</span><button class="remove" data-remove="${esc(v.id)}">Remove</button></div>`).join(''):'<p style="font-size:11px;color:var(--muted)">No videos added yet.</p>';document.querySelectorAll('[data-remove]').forEach(b=>b.addEventListener('click',async()=>{if(!confirm('Remove this video from the public portfolio?'))return;try{await api('remove',{id:b.dataset.remove});await loadVideos()}catch(e){alert(e.message)}}))}
-function showAdmin(){const unlocked=!!adminPassword;$('#admin-login').classList.toggle('hidden',unlocked);$('#admin-tools').classList.toggle('hidden',!unlocked);$('#admin-panel').classList.add('show');if(unlocked){api('auth').then(()=>loadVideos()).catch(()=>{adminPassword='';sessionStorage.removeItem('atharvAdminPassword');$('#admin-tools').classList.add('hidden');$('#admin-login').classList.remove('hidden')})}}
-async function migrateLegacyVideos(){try{const remote=await api('get');if(Array.isArray(remote.videos)&&remote.videos.length)return;const old=JSON.parse(localStorage.getItem('atharvPortfolioVideosV1')||'[]');if(!Array.isArray(old)||!old.length)return;for(const v of old){if(v&&v.title&&validYouTube(v.url))await api('add',{video:{id:crypto.randomUUID(),title:String(v.title),url:String(v.url),long:!!v.long}})}localStorage.removeItem('atharvPortfolioVideosV1');alert('Your old browser-saved videos were imported into permanent portfolio storage.')}catch(e){console.warn('Legacy video migration skipped',e)}}
-$('#login-form').addEventListener('submit',async e=>{e.preventDefault();const pass=$('#admin-password').value;try{await api('auth',{},pass);adminPassword=pass;sessionStorage.setItem('atharvAdminPassword',pass);$('#admin-password').value='';$('#admin-login').classList.add('hidden');$('#admin-tools').classList.remove('hidden');$('#admin-panel').classList.add('show');await migrateLegacyVideos();await loadVideos()}catch(err){adminPassword='';sessionStorage.removeItem('atharvAdminPassword');alert('Password was not accepted. Check the admin password set in Netlify.')}});
-$('#video-form').addEventListener('submit',async e=>{e.preventDefault();const title=$('#video-title').value.trim(),url=$('#video-url').value.trim(),long=$('#video-long').checked;if(!validYouTube(url)){alert('Please paste a valid YouTube video URL (watch, youtu.be, shorts or embed link).');return}try{await api('add',{video:{id:crypto.randomUUID(),title,url,long}});await loadVideos();e.target.reset();$('#admin-panel').classList.remove('show')}catch(err){alert(err.message)}});
-$('#admin-open').addEventListener('click',showAdmin);$('#admin-close').addEventListener('click',()=>$('#admin-panel').classList.remove('show'));$('#admin-panel').addEventListener('click',e=>{if(e.target.id==='admin-panel')e.currentTarget.classList.remove('show')});
-$('#admin-logout').addEventListener('click',()=>{adminPassword='';sessionStorage.removeItem('atharvAdminPassword');$('#admin-tools').classList.add('hidden');$('#admin-login').classList.remove('hidden');$('#admin-panel').classList.remove('show')});
-$('#export-data').addEventListener('click',()=>{const blob=new Blob([JSON.stringify(videos,null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='atharv-portfolio-videos.json';a.click();URL.revokeObjectURL(a.href)});
-$('#import-data').addEventListener('click',()=>$('#import-file').click());$('#import-file').addEventListener('change',async e=>{const f=e.target.files[0];if(!f)return;try{const data=JSON.parse(await f.text());if(!Array.isArray(data)||data.some(v=>!v.title||!validYouTube(v.url)))throw Error('bad');for(const v of data){await api('add',{video:{id:crypto.randomUUID(),title:String(v.title),url:String(v.url),long:!!v.long}})}await loadVideos();alert('Video list imported to the public portfolio.')}catch(err){alert('Could not import this file. Please use an exported portfolio video JSON file.')}e.target.value=''});
-$('#year').textContent=new Date().getFullYear();loadVideos();
+const API='/api/videos';
+let videos=[];
+const $=s=>document.querySelector(s);
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function getId(url){
+ try{
+  const u=new URL(url);
+  if(u.hostname.includes('youtu.be'))return u.pathname.split('/').filter(Boolean)[0]||'';
+  if(u.searchParams.get('v'))return u.searchParams.get('v');
+  const m=u.pathname.match(/\/(?:embed|shorts|live)\/([^/?]+)/);
+  return m?m[1]:'';
+ }catch(e){return ''}
+}
+function validYouTube(url){return !!getId(url)}
+function thumbnail(id){return `https://i.ytimg.com/vi/${encodeURIComponent(id)}/hqdefault.jpg`}
+function card(v){
+ const id=getId(v.url);
+ return `<article class="video-card"><a class="thumb" href="${esc(v.url)}" target="_blank" rel="noreferrer"><img loading="lazy" src="${thumbnail(id)}" alt="Thumbnail for ${esc(v.title)}" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/${encodeURIComponent(id)}/mqdefault.jpg'"><span class="play">▶</span></a><div class="video-meta"><div><h3>${esc(v.title)}</h3><p>${v.long?'LONG-FORM':'SELECTED WORK'} · YOUTUBE</p></div><span class="mono">↗</span></div></article>`;
+}
+function render(){
+ const all=$('#all-grid'),long=$('#long-grid');
+ all.innerHTML=videos.length?videos.map(card).join(''):'<div class="empty">Your best work will live here. Use <strong>Manage Work</strong> to add a YouTube link.</div>';
+ const longs=videos.filter(v=>v.long);
+ long.innerHTML=longs.length?longs.map(card).join(''):'<div class="empty">Long-form projects you add will appear here automatically.</div>';
+ $('#work-count').textContent=String(videos.length).padStart(2,'0')+' projects';
+ renderAdmin();
+}
+async function api(action,data={}){
+ const res=await fetch(API,{
+  method:action==='get'?'GET':'POST',
+  headers:action==='get'?{}:{'Content-Type':'application/json'},
+  body:action==='get'?undefined:JSON.stringify({action,...data})
+ });
+ let body={};
+ try{body=await res.json()}catch(e){}
+ if(!res.ok)throw new Error(body.error||'Request failed');
+ return body;
+}
+async function loadVideos(){
+ try{
+  const d=await api('get');
+  videos=Array.isArray(d.videos)?d.videos:[];
+  render();
+ }catch(e){
+  console.error(e);
+  $('#all-grid').innerHTML='<div class="empty">Could not load portfolio videos right now. Please refresh in a moment.</div>';
+  $('#long-grid').innerHTML='<div class="empty">Long-form projects will appear here.</div>';
+  $('#work-count').textContent='00 projects';
+ }
+}
+function renderAdmin(){
+ $('#admin-video-list').innerHTML=videos.length?videos.map(v=>`<div class="admin-item"><span>${esc(v.title)}${v.long?' · Long-form':''}</span><button class="remove" data-remove="${esc(v.id)}">Remove</button></div>`).join(''):'<p style="font-size:11px;color:var(--muted)">No videos added yet.</p>';
+ document.querySelectorAll('[data-remove]').forEach(b=>b.addEventListener('click',async()=>{
+  if(!confirm('Remove this video from the public portfolio?'))return;
+  try{await api('remove',{id:b.dataset.remove});await loadVideos()}
+  catch(e){alert(e.message)}
+ }));
+}
+function showAdmin(){
+ $('#admin-panel').classList.add('show');
+ loadVideos();
+}
+$('#video-form').addEventListener('submit',async e=>{
+ e.preventDefault();
+ const title=$('#video-title').value.trim(),url=$('#video-url').value.trim(),long=$('#video-long').checked;
+ if(!validYouTube(url)){alert('Please paste a valid YouTube video URL (watch, youtu.be, shorts or embed link).');return}
+ try{
+  await api('add',{video:{id:crypto.randomUUID(),title,url,long}});
+  await loadVideos();
+  e.target.reset();
+  alert('Video added to your portfolio.');
+ }catch(err){alert(err.message)}
+});
+$('#admin-open').addEventListener('click',showAdmin);
+$('#admin-close').addEventListener('click',()=>$('#admin-panel').classList.remove('show'));
+$('#admin-panel').addEventListener('click',e=>{if(e.target.id==='admin-panel')e.currentTarget.classList.remove('show')});
+$('#admin-logout').addEventListener('click',()=>$('#admin-panel').classList.remove('show'));
+$('#export-data').addEventListener('click',()=>{
+ const blob=new Blob([JSON.stringify(videos,null,2)],{type:'application/json'});
+ const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='atharv-portfolio-videos.json';a.click();URL.revokeObjectURL(a.href);
+});
+$('#import-data').addEventListener('click',()=>$('#import-file').click());
+$('#import-file').addEventListener('change',async e=>{
+ const f=e.target.files[0];if(!f)return;
+ try{
+  const data=JSON.parse(await f.text());
+  if(!Array.isArray(data)||data.some(v=>!v.title||!validYouTube(v.url)))throw Error('bad');
+  for(const v of data)await api('add',{video:{id:crypto.randomUUID(),title:String(v.title),url:String(v.url),long:!!v.long}});
+  await loadVideos();alert('Video list imported.');
+ }catch(err){alert('Could not import this file. Please use an exported portfolio video JSON file.')}
+ e.target.value='';
+});
+$('#year').textContent=new Date().getFullYear();
+loadVideos();
 </script>
-</body></html>
+</body>
+</html>
