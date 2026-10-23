@@ -7,12 +7,6 @@ const json = (data, status = 200) => new Response(JSON.stringify(data), {
   headers: { "content-type": "application/json; charset=utf-8", "cache-control": "no-store" },
 });
 
-function isAdmin(request) {
-  const configured = process.env.ADMIN_PASSWORD;
-  const provided = (request.headers.get("authorization") || "").replace(/^Bearer\s+/i, "");
-  return Boolean(configured && provided && provided === configured);
-}
-
 function validVideo(video) {
   if (!video || typeof video.title !== "string" || typeof video.url !== "string") return false;
   if (video.title.trim().length < 1 || video.title.length > 100) return false;
@@ -42,7 +36,6 @@ export default async (request) => {
   }
 
   if (request.method !== "POST") return json({ error: "Method not allowed" }, 405);
-  if (!isAdmin(request)) return json({ error: "Unauthorized" }, 401);
 
   try {
     const body = await request.json();
